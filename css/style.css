@@ -118,31 +118,25 @@ body {
 }
 
 .card .box .content {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 
 .box .content img {
-  width: 50px;
-  height: 50px;
-}
-
-.box .content h3 {
- font-size: 10px;
+  width: 40%;
 }
 
 .card .box .content a {
   position: relative;
   display: inline-block;
-  padding: 3px 10px;
+  padding: 7px 20px;
   background-color: #03a9f4;
-  margin-top: 5px;
+  margin-top: 15px;
   border-radius: 20px;
   color: #fff;
   text-decoration: none;
   font-weight: 400;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  font-size: 10px;
 }
 
 .card:hover .box .content a {
@@ -162,7 +156,6 @@ body {
 
 .card .box .content li {
   padding: 2px;
-  font-size: 10px;
 }
 
 .rm {
@@ -289,69 +282,67 @@ body {
     padding: 15px;
     margin: 10px;
   }
+
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:600px){
   .sections {
     margin: 5px 0;
     width: 100vw;
     height: 20rem;
     /* border-radius: 10px; */
   }
-
+  
   .heading-primary {
     font-weight: 500;
-    font-size: 15px;
-  }
-
+    font-size: 15px;}
+  
   .container {
     margin: 0px;
     height: auto;
   }
-
+  
   .sec-lcw {
-    display: flex;
-    /* grid-template-columns: 100%;
-    grid-template-rows: 50%; */
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50%;
     height: 30rem;
     width: 100vw;
     background-image: linear-gradient(to bottom right, #ffc300, #ff5733);
     background-size: 400%;
     animation: change 10s infinite;
   }
-
+  
   .sec-lcw-text {
     /* width: 100%; */
     margin: 20px;
   }
-
+  
   .sec-image {
-    width: 100%;
+    /* width: 100%; */
     /* margin: 20px; */
     background-image: url("../images/banner.png");
     background-size: cover;
   }
-
+  
   .sub-heading {
     margin-top: 0%;
-    font-size: 40px;
   }
-
+  
   .sub-heading::selection {
     background-color: white;
     color: #ffc300;
   }
-
+  
   .sec-lcw-text p {
-    font-size: 23px;
+    font-size: 10px;
     color: white;
   }
   .sec-lcw-text p::selection {
     background-color: white;
     color: #ffc300;
   }
-
+  
   .sec-card {
     margin: 20px 0;
     /* background-color: aqua; */
@@ -360,7 +351,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
   }
-
+  
   .sub-heading-2 {
     display: inline-block;
     color: rgb(138, 137, 137);
@@ -370,12 +361,12 @@ body {
     transform: translateX(-50%);
     cursor: default;
   }
-
+  
   .sub-heading-2:hover {
     color: #ffc300;
     border-bottom: 2px solid #ffc300;
   }
-
+  
   .card {
     position: relative;
     height: 90%;
@@ -385,7 +376,7 @@ body {
       5px 5px 5px rgba(0, 0, 0, 0.05), 5px 5px 5px rgba(255, 255, 255, 0.05);
     border-radius: 15px;
   }
-
+  
   .card .box {
     position: absolute;
     top: 20px;
@@ -400,16 +391,16 @@ body {
     justify-content: center;
     transition: all 0.4s;
   }
-
+  
   .card .box .content {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
   }
-
+  
   .box .content img {
     width: 40%;
   }
-
+  
   .card .box .content a {
     position: relative;
     display: inline-block;
@@ -422,26 +413,26 @@ body {
     font-weight: 400;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
-
+  
   .card:hover .box .content a {
     background: #ff00dd;
   }
-
+  
   .card:hover .box {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     transform: translateY(-50px);
     background: linear-gradient(45deg, #c70039, #900c3f);
   }
-
+  
   .card:hover .box .content li,
   .card:hover .box .content h3 {
     color: white;
   }
-
+  
   .card .box .content li {
     padding: 2px;
   }
-
+  
   .rm {
     display: inline-block;
     text-align: center;
@@ -449,7 +440,7 @@ body {
     transform: translateX(-50%);
     text-transform: uppercase;
     text-decoration: none;
-    padding: 3px 10px;
+    padding: 7px 20px;
     background-color: #03a9f4;
     border-radius: 20px;
     color: #fff;
@@ -458,13 +449,13 @@ body {
     transition: 0.4s;
     margin-bottom: 10px;
   }
-
+  
   .sec-wf {
     display: flex;
     margin-top: 50px;
     justify-content: space-evenly;
   }
-
+  
   .testimonials {
     display: flex;
     justify-content: space-evenly;
@@ -472,29 +463,29 @@ body {
     margin-top: 50px;
     background-image: linear-gradient(to right bottom, #7fa9ff, #957fff);
   }
-
+  
   .testimonials .card {
     /* background-color: ; */
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
     background-color: #efeef4;
   }
-
+  
   .content .introtext {
-    font-size: 10px;
-    padding: 10px;
-    margin: 10px;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
     color: rgb(133, 131, 131);
   }
-
+  
   .content .user-image {
     text-align: center;
   }
-
+  
   .content .user-image img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
   }
-
+  
   .content .user-name {
     margin: 10px;
     display: flex;
@@ -502,9 +493,9 @@ body {
     justify-content: center;
     align-items: center;
   }
-
+  
   .content .user-name h4 {
-    font-size: 18px;
+    font-size: 28px;
     color: rgb(212, 182, 182);
   }
 }
