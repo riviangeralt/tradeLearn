@@ -1,0 +1,119 @@
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 10px;
+  }
+  
+  .navigation-bar img {
+    box-sizing: border-box;
+    height: 80px;
+  }
+  
+  .navigation-bar ul {
+    display: flex;
+  }
+  
+  .navigation-bar ul li {
+    padding: 0 20px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+  }
+  
+  .navigation-bar ul li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .navigation-bar ul li a {
+    color: grey;
+    font-weight: 800;
+  }
+  
+
+  .active,
+  .navigation-bar ul li a:hover,
+  .navigation-bar ul li a:focus {
+    color: orangered;
+    font-weight: 800;
+    border-bottom: 2px solid orangered;
+    padding: 5px 0;
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    align-self: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;
+  }
+
+
+  @media screen and (max-width:600px){
+    
+    .navigation-bar img {
+      /* box-sizing: border-box; */
+      height: 50px;
+      margin-left: 40px;
+    }
+    
+    .navigation-bar ul {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #2c3e50;
+      top: 100px;
+      left: -100%;
+      z-index: 999;
+      text-align: center;
+      display: block;
+      transition: all .4s;
+    }
+    
+    .navigation-bar ul li {
+      display: block;
+      margin-top: 20px;
+      padding: 20px 0;
+     
+    }
+    
+    .navigation-bar ul li:hover {
+      transform: translateY(0);
+    }
+    
+    .navigation-bar ul li a {
+      color: white;
+      font-weight: 800;
+    }
+    
+    .navigation-bar ul li a:hover,
+    .navigation-bar ul li a:focus {
+      color: white;
+      font-weight: 800;
+      border-bottom: 2px solid white;
+      padding: 5px 0;
+    }
+
+    .checkbtn{
+      font-size: 30px;
+      /* align-self: right; */
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: block;
+    }
+  
+    #check{
+      display: none;
+    }
+
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }

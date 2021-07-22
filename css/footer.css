@@ -1,0 +1,76 @@
+.footer {
+  background-color: rgb(2, 129, 138);
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: white;
+  
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content p {
+  line-height: 28px;
+  font-size: 14px;
+  margin: 10px auto;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials li a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials li a i {
+  font-size: 1.1rem;
+  transition: color 0.4s;
+}
+
+.socials li a:hover i.fa-twitter {
+  color: aqua;
+}
+
+.socials li a:hover i.fa-facebook {
+  color: blue;
+}
+
+.socials li a:hover i.fa-whatsapp {
+  color: rgb(2, 255, 2);
+}
+
+.socials li a:hover i.fa-linkedin {
+  color: rgb(0, 132, 255);
+}
+
+.socials li a:hover i.fa-telegram {
+  color: rgb(0, 183, 255);
+}
+
+.footer-bottom {
+  background-color: black;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+}
